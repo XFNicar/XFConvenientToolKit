@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XFConvenientToolKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "该项目是一个开发工具类的集合，目的是提供简化API，减少垃圾代码量，项目随开发过程逐步更新"
 
   # s.description  = <<-DESC
