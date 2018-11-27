@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A071E40121AD1D7800A58E3C /* NSString+ConvenientTools.m in Sources */ = {isa = PBXBuildFile; fileRef = A071E40021AD1D7800A58E3C /* NSString+ConvenientTools.m */; };
+		A071E40D21AD35A900A58E3C /* UILabel+ConvenientTools.m in Sources */ = {isa = PBXBuildFile; fileRef = A071E40C21AD35A900A58E3C /* UILabel+ConvenientTools.m */; };
 		A089C661219174DA00C52705 /* NSDecimalNumber+ConvenientTools.m in Sources */ = {isa = PBXBuildFile; fileRef = A089C660219174DA00C52705 /* NSDecimalNumber+ConvenientTools.m */; };
 		A0FE9CAF218AE6C600EA696B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FE9CAE218AE6C600EA696B /* AppDelegate.m */; };
 		A0FE9CB2218AE6C600EA696B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FE9CB1218AE6C600EA696B /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		A071E3FF21AD1D7800A58E3C /* NSString+ConvenientTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ConvenientTools.h"; sourceTree = "<group>"; };
 		A071E40021AD1D7800A58E3C /* NSString+ConvenientTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ConvenientTools.m"; sourceTree = "<group>"; };
+		A071E40B21AD35A900A58E3C /* UILabel+ConvenientTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UILabel+ConvenientTools.h"; path = "../../../../../../CompanyProject/MDDJB/mddjb/mddjb/Library/MuDanService/BaseVC/UILabel+ConvenientTools.h"; sourceTree = "<group>"; };
+		A071E40C21AD35A900A58E3C /* UILabel+ConvenientTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UILabel+ConvenientTools.m"; path = "../../../../../../CompanyProject/MDDJB/mddjb/mddjb/Library/MuDanService/BaseVC/UILabel+ConvenientTools.m"; sourceTree = "<group>"; };
 		A089C65F219174DA00C52705 /* NSDecimalNumber+ConvenientTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+ConvenientTools.h"; sourceTree = "<group>"; };
 		A089C660219174DA00C52705 /* NSDecimalNumber+ConvenientTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+ConvenientTools.m"; sourceTree = "<group>"; };
 		A0FE9CAA218AE6C600EA696B /* XFConvenientToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFConvenientToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +60,15 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
+		A071E40A21AD356400A58E3C /* ConvenientToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				A0FE9CC4218AE71F00EA696B /* XFFoundation */,
+				A0FE9CC3218AE71500EA696B /* UIKit */,
+			);
+			path = ConvenientToolKit;
+			sourceTree = "<group>";
+		};
 		A089C65E2191747400C52705 /* NSDecimalNumber */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +99,7 @@
 			children = (
 				A0FE9CAD218AE6C600EA696B /* AppDelegate.h */,
 				A0FE9CAE218AE6C600EA696B /* AppDelegate.m */,
-				A0FE9CC4218AE71F00EA696B /* XFFoundation */,
-				A0FE9CC3218AE71500EA696B /* UIKit */,
+				A071E40A21AD356400A58E3C /* ConvenientToolKit */,
 				A0FE9CB0218AE6C600EA696B /* ViewController.h */,
 				A0FE9CB1218AE6C600EA696B /* ViewController.m */,
 				A0FE9CB3218AE6C600EA696B /* Main.storyboard */,
@@ -103,6 +114,8 @@
 		A0FE9CC3218AE71500EA696B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A071E40B21AD35A900A58E3C /* UILabel+ConvenientTools.h */,
+				A071E40C21AD35A900A58E3C /* UILabel+ConvenientTools.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -205,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0FE9CB2218AE6C600EA696B /* ViewController.m in Sources */,
+				A071E40D21AD35A900A58E3C /* UILabel+ConvenientTools.m in Sources */,
 				A0FE9CBD218AE6C800EA696B /* main.m in Sources */,
 				A071E40121AD1D7800A58E3C /* NSString+ConvenientTools.m in Sources */,
 				A0FE9CAF218AE6C600EA696B /* AppDelegate.m in Sources */,
