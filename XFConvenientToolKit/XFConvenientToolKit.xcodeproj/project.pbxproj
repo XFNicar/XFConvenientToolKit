@@ -63,7 +63,7 @@
 		A071E40A21AD356400A58E3C /* ConvenientToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				A0FE9CC4218AE71F00EA696B /* XFFoundation */,
+				A0FE9CC4218AE71F00EA696B /* Foundation */,
 				A0FE9CC3218AE71500EA696B /* UIKit */,
 			);
 			path = ConvenientToolKit;
@@ -120,7 +120,7 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		A0FE9CC4218AE71F00EA696B /* XFFoundation */ = {
+		A0FE9CC4218AE71F00EA696B /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
 				A071E3FE21AD1D4E00A58E3C /* NSString */,
@@ -128,7 +128,7 @@
 				A0FE9CC6218AE76500EA696B /* NSDate */,
 				A0FE9CC5218AE74300EA696B /* NSCalendar */,
 			);
-			path = XFFoundation;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		A0FE9CC5218AE74300EA696B /* NSCalendar */ = {
