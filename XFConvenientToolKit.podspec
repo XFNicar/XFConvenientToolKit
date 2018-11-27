@@ -70,7 +70,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "XFConvenientToolKit/ConvenientToolKit/Foundation/**/*.{h,m}","XFConvenientToolKit/ConvenientToolKit/UIKit/**/*.{h,m}"
+  s.source_files  = "XFConvenientToolKit/XFConvenientToolKit/ConvenientToolKit/Foundation/**/*.{h,m}","XFConvenientToolKit/XFConvenientToolKit/ConvenientToolKit/UIKit/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
