@@ -10,55 +10,64 @@
 
 @implementation NSDecimalNumber (ConvenientTools)
 
-+ (NSDecimalNumber *)stringNumberByAdding:(NSString *)firstNumber andNumber:(NSString *)secondString {
++ (NSDecimalNumberHandler *)amountHandler {
+    return  [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundUp
+                                                                   scale:2
+                                                        raiseOnExactness:NO
+                                                         raiseOnOverflow:NO
+                                                        raiseOnUnderflow:NO
+                                                     raiseOnDivideByZero:YES];
+}
+
++ (NSDecimalNumber *)stringByAdding:(NSString *)firstNumber andNumber:(NSString *)secondString {
     NSDecimalNumber *firstDNumber =  [NSDecimalNumber decimalNumberWithString:firstNumber];
     NSDecimalNumber *secondDNumber = [NSDecimalNumber decimalNumberWithString:secondString];
-    return [firstDNumber decimalNumberByAdding:secondDNumber];
+    return [firstDNumber decimalNumberByAdding:secondDNumber withBehavior:[self amountHandler]];
 }
 
 + (NSDecimalNumber *)numberByAdding:(NSNumber *)firstNumber andNumber:(NSNumber *)secondNumber {
     NSDecimalNumber *firstDNumber = [NSDecimalNumber decimalNumberWithDecimal:[firstNumber decimalValue]];
     NSDecimalNumber *secondDNumber = [NSDecimalNumber decimalNumberWithDecimal:[secondNumber decimalValue]];
-    return [firstDNumber decimalNumberByAdding:secondDNumber];
+    return [firstDNumber decimalNumberByAdding:secondDNumber withBehavior:[self amountHandler]];
 }
 
 // 减
-+ (NSDecimalNumber *)stringNumberBySubtracting:(NSString *)firstNumber andNumber:(NSString *)secondString {
++ (NSDecimalNumber *)stringBySubtracting:(NSString *)firstNumber andNumber:(NSString *)secondString {
     NSDecimalNumber *firstDNumber =  [NSDecimalNumber decimalNumberWithString:firstNumber];
     NSDecimalNumber *secondDNumber = [NSDecimalNumber decimalNumberWithString:secondString];
-    return [firstDNumber decimalNumberBySubtracting:secondDNumber];
+    return [firstDNumber decimalNumberBySubtracting:secondDNumber withBehavior:[self amountHandler]];
 }
 
 + (NSDecimalNumber *)numberBySubtracting:(NSNumber *)firstNumber andNumber:(NSNumber *)secondNumber {
     NSDecimalNumber *firstDNumber = [NSDecimalNumber decimalNumberWithDecimal:[firstNumber decimalValue]];
     NSDecimalNumber *secondDNumber = [NSDecimalNumber decimalNumberWithDecimal:[secondNumber decimalValue]];
-    return [firstDNumber decimalNumberBySubtracting:secondDNumber];
+    return [firstDNumber decimalNumberBySubtracting:secondDNumber withBehavior:[self amountHandler]];
 }
 
 // 乘
-+ (NSDecimalNumber *)stringNumberByMultiplyingBy:(NSString *)firstNumber andNumber:(NSString *)secondString {
++ (NSDecimalNumber *)stringByMultiplyingBy:(NSString *)firstNumber andNumber:(NSString *)secondString {
     NSDecimalNumber *firstDNumber =  [NSDecimalNumber decimalNumberWithString:firstNumber];
     NSDecimalNumber *secondDNumber = [NSDecimalNumber decimalNumberWithString:secondString];
-    return [firstDNumber decimalNumberByMultiplyingBy:secondDNumber];
+    return [firstDNumber decimalNumberByMultiplyingBy:secondDNumber withBehavior:[self amountHandler]];
 }
 
 + (NSDecimalNumber *)numberByMultiplyingBy:(NSNumber *)firstNumber andNumber:(NSNumber *)secondNumber {
     NSDecimalNumber *firstDNumber = [NSDecimalNumber decimalNumberWithDecimal:[firstNumber decimalValue]];
     NSDecimalNumber *secondDNumber = [NSDecimalNumber decimalNumberWithDecimal:[secondNumber decimalValue]];
-    return [firstDNumber decimalNumberByMultiplyingBy:secondDNumber];
+    return [firstDNumber decimalNumberByMultiplyingBy:secondDNumber withBehavior:[self amountHandler]];
 }
 
 // 除
-+ (NSDecimalNumber *)stringNumberByDividingBy:(NSString *)firstNumber andNumber:(NSString *)secondString {
++ (NSDecimalNumber *)stringByDividingBy:(NSString *)firstNumber andNumber:(NSString *)secondString {
     NSDecimalNumber *firstDNumber =  [NSDecimalNumber decimalNumberWithString:firstNumber];
     NSDecimalNumber *secondDNumber = [NSDecimalNumber decimalNumberWithString:secondString];
-    return [firstDNumber decimalNumberByDividingBy:secondDNumber];
+    return [firstDNumber decimalNumberByDividingBy:secondDNumber withBehavior:[self amountHandler]];
 }
 
 + (NSDecimalNumber *)numberByDividingBy:(NSNumber *)firstNumber andNumber:(NSNumber *)secondNumber {
     NSDecimalNumber *firstDNumber = [NSDecimalNumber decimalNumberWithDecimal:[firstNumber decimalValue]];
     NSDecimalNumber *secondDNumber = [NSDecimalNumber decimalNumberWithDecimal:[secondNumber decimalValue]];
-    return [firstDNumber decimalNumberByDividingBy:secondDNumber];
+    return [firstDNumber decimalNumberByDividingBy:secondDNumber withBehavior:[self amountHandler]];
 }
 
 

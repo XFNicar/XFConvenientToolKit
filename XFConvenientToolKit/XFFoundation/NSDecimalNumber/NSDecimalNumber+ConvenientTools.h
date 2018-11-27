@@ -9,22 +9,31 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDecimalNumber (ConvenientTools)
+
+/*
+ 默认为 金额计算保留两位小数 
+ 
+ */
+
+// 金额计算
++ (NSDecimalNumberHandler *)amountHandler;
+
 // 加
-+ (NSDecimalNumber *)stringNumberByAdding:(NSString *)firstNumber andNumber:(NSString *)secondString;
++ (NSDecimalNumber *)stringByAdding:(NSString *)firstNumber andNumber:(NSString *)secondString;
 
 + (NSDecimalNumber *)numberByAdding:(NSNumber *)firstNumber andNumber:(NSNumber *)secondNumber;
 // 减
-+ (NSDecimalNumber *)stringNumberBySubtracting:(NSString *)firstNumber andNumber:(NSString *)secondString;
++ (NSDecimalNumber *)stringBySubtracting:(NSString *)firstNumber andNumber:(NSString *)secondString;
 
 + (NSDecimalNumber *)numberBySubtracting:(NSNumber *)firstNumber andNumber:(NSNumber *)secondNumber;
 
 // 乘
-+ (NSDecimalNumber *)stringNumberByMultiplyingBy:(NSString *)firstNumber andNumber:(NSString *)secondString;
++ (NSDecimalNumber *)stringByMultiplyingBy:(NSString *)firstNumber andNumber:(NSString *)secondString;
 
 + (NSDecimalNumber *)numberByMultiplyingBy:(NSNumber *)firstNumber andNumber:(NSNumber *)secondNumber;
 
 // 除
-+ (NSDecimalNumber *)stringNumberByDividingBy:(NSString *)firstNumber andNumber:(NSString *)secondString;
++ (NSDecimalNumber *)stringByDividingBy:(NSString *)firstNumber andNumber:(NSString *)secondString;
 
 + (NSDecimalNumber *)numberByDividingBy:(NSNumber *)firstNumber andNumber:(NSNumber *)secondNumber;
 

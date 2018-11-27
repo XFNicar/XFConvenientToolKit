@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A089C661219174DA00C52705 /* NSDecimalNumber+ConvenientTools.m in Sources */ = {isa = PBXBuildFile; fileRef = A089C660219174DA00C52705 /* NSDecimalNumber+ConvenientTools.m */; };
 		A0FE9CAF218AE6C600EA696B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FE9CAE218AE6C600EA696B /* AppDelegate.m */; };
 		A0FE9CB2218AE6C600EA696B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FE9CB1218AE6C600EA696B /* ViewController.m */; };
 		A0FE9CB5218AE6C600EA696B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0FE9CB3218AE6C600EA696B /* Main.storyboard */; };
 		A0FE9CB7218AE6C800EA696B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0FE9CB6218AE6C800EA696B /* Assets.xcassets */; };
 		A0FE9CBA218AE6C800EA696B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0FE9CB8218AE6C800EA696B /* LaunchScreen.storyboard */; };
 		A0FE9CBD218AE6C800EA696B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FE9CBC218AE6C800EA696B /* main.m */; };
+		A0FE9CC9218AE7A900EA696B /* NSDate+ConvenientTools.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FE9CC8218AE7A900EA696B /* NSDate+ConvenientTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A089C65F219174DA00C52705 /* NSDecimalNumber+ConvenientTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+ConvenientTools.h"; sourceTree = "<group>"; };
+		A089C660219174DA00C52705 /* NSDecimalNumber+ConvenientTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+ConvenientTools.m"; sourceTree = "<group>"; };
 		A0FE9CAA218AE6C600EA696B /* XFConvenientToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFConvenientToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FE9CAD218AE6C600EA696B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0FE9CAE218AE6C600EA696B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		A0FE9CB9218AE6C800EA696B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0FE9CBB218AE6C800EA696B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0FE9CBC218AE6C800EA696B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0FE9CC7218AE7A900EA696B /* NSDate+ConvenientTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ConvenientTools.h"; sourceTree = "<group>"; };
+		A0FE9CC8218AE7A900EA696B /* NSDate+ConvenientTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ConvenientTools.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A089C65E2191747400C52705 /* NSDecimalNumber */ = {
+			isa = PBXGroup;
+			children = (
+				A089C65F219174DA00C52705 /* NSDecimalNumber+ConvenientTools.h */,
+				A089C660219174DA00C52705 /* NSDecimalNumber+ConvenientTools.m */,
+			);
+			path = NSDecimalNumber;
+			sourceTree = "<group>";
+		};
 		A0FE9CA1218AE6C600EA696B = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +75,8 @@
 			children = (
 				A0FE9CAD218AE6C600EA696B /* AppDelegate.h */,
 				A0FE9CAE218AE6C600EA696B /* AppDelegate.m */,
+				A0FE9CC4218AE71F00EA696B /* XFFoundation */,
+				A0FE9CC3218AE71500EA696B /* UIKit */,
 				A0FE9CB0218AE6C600EA696B /* ViewController.h */,
 				A0FE9CB1218AE6C600EA696B /* ViewController.m */,
 				A0FE9CB3218AE6C600EA696B /* Main.storyboard */,
@@ -69,6 +86,39 @@
 				A0FE9CBC218AE6C800EA696B /* main.m */,
 			);
 			path = XFConvenientToolKit;
+			sourceTree = "<group>";
+		};
+		A0FE9CC3218AE71500EA696B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A0FE9CC4218AE71F00EA696B /* XFFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				A089C65E2191747400C52705 /* NSDecimalNumber */,
+				A0FE9CC6218AE76500EA696B /* NSDate */,
+				A0FE9CC5218AE74300EA696B /* NSCalendar */,
+			);
+			path = XFFoundation;
+			sourceTree = "<group>";
+		};
+		A0FE9CC5218AE74300EA696B /* NSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSCalendar;
+			sourceTree = "<group>";
+		};
+		A0FE9CC6218AE76500EA696B /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				A0FE9CC7218AE7A900EA696B /* NSDate+ConvenientTools.h */,
+				A0FE9CC8218AE7A900EA696B /* NSDate+ConvenientTools.m */,
+			);
+			path = NSDate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +194,8 @@
 				A0FE9CB2218AE6C600EA696B /* ViewController.m in Sources */,
 				A0FE9CBD218AE6C800EA696B /* main.m in Sources */,
 				A0FE9CAF218AE6C600EA696B /* AppDelegate.m in Sources */,
+				A0FE9CC9218AE7A900EA696B /* NSDate+ConvenientTools.m in Sources */,
+				A089C661219174DA00C52705 /* NSDecimalNumber+ConvenientTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
