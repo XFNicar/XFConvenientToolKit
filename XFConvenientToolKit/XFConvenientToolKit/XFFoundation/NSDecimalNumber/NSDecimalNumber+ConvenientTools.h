@@ -15,7 +15,7 @@
  
  */
 
-// 金额计算
+// 金额计算 结果保留两位小数
 + (NSDecimalNumberHandler *)amountHandler;
 
 // 加
